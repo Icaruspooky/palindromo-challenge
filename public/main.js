@@ -10,7 +10,7 @@ button.addEventListener('click', function () {
     }
 });
 
-input.addEventListener('keyup', function (event) {
+input.addEventListener('keypress', function (event) {
     if (event.key === 'Enter') {
         let sentence = input.value;
         if (sentence){
