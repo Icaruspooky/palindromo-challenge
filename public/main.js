@@ -1,13 +1,12 @@
 const input = document.getElementById('input');
 const button = document.getElementById('erase');
-const table = document.getElementById('table');
 
 button.addEventListener('click', function () {
-    let tableRows = table.getElementsByTagName('tr');
-    let counter = 1;
+    let tableRows = document.getElementById('body').getElementsByTagName('tr');
+    let counter = 0;
     let length = tableRows.length;
     for (counter; counter < length; counter++) {
-        tableRows.item(1).remove();
+        tableRows.item(0).remove();
     }
 });
 
@@ -15,7 +14,8 @@ input.addEventListener('keyup', function (event) {
     if (event.key === 'Enter') {
         let sentence = input.value;
         if (sentence){
-            let row = table.insertRow();
+            let body = document.getElementById('body');
+            let row = body.insertRow();
             let sentenceCell = row.insertCell();
             let palindromoCell = row.insertCell();
             sentenceCell.append(sentence);

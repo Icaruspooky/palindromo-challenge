@@ -2,21 +2,31 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Verificador de Palíndromo</title>  
+  <title>Verificador de Palíndromo</title>
 </head>
 
 <body>
   <div>
-    <h3>Validador de Palíndromo</h3>
-    <button type="button" data-test="limpar-dados" id="erase">Apagar Histórico</button>
-    <input type="text" data-test="entrada" id="input">
-    <table id="table">
-      <tr id="list">
-        <th>Frase</th>
-        <th>Palíndromo</th>
-      </tr>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <h3>Validador de Palíndromo</h3>
+          </th>
+          <th><button type="button" data-test="limpar-dados" id="erase">Apagar Histórico</button></th>
+        </tr>
+        <tr>
+          <th><input type="text" data-test="entrada" id="input"></th>
+        </tr>
+        <tr>
+          <th>Frase</th>
+          <th>Palíndromo</th>
+        </tr>
+      </thead>
+      <tbody id="body">
+      </tbody>
     </table>
-  </div>  
+  </div>
   <script type="text/javascript" src="main.js"></script>
 </body>
 
