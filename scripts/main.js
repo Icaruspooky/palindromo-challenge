@@ -37,4 +37,4 @@ function isPalindromo(sentence) {
     let lowerCaseSentence = sentence.toLowerCase().replace(re, '');
     let reverse = lowerCaseSentence.split('').reverse().join('');
     return lowerCaseSentence === reverse;
-}
+};
