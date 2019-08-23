@@ -13,7 +13,7 @@ button.addEventListener('click', function () {
 input.addEventListener('keypress', function (event) {
     if (event.key === 'Enter') {
         let sentence = input.value;
-        if (sentence){
+        if (sentence.trim()){
             let body = document.getElementById('body');
             let row = body.insertRow();
             let sentenceCell = row.insertCell();
